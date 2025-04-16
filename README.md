@@ -42,7 +42,8 @@ allow connections to internal servers (such as a Minecraft server) from outside 
   the local network. When testing manually:
   - You may see **channel request errors** if the SSH client attempts services not provided by this minimal server.
   - **Random warnings or errors** may also appear during key signing or if the connection does not follow the expected forwarding
-    flow. These issues are expected behavior given the limited scope of the SSH server.
+    flow.
+  tl;dr : This is a barebones, secure port forwarding setup. There is no backend service running.
 
 - **Ongoing Development**:  
   This is in very early stages at the moment. It should work if everything is configured correctly, but I will slowly be consolidating
