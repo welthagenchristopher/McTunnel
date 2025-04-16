@@ -35,7 +35,8 @@ allow connections to internal servers (such as a Minecraft server) from outside 
 
 - **Auto Signing Keys on Windows**:  
   The application auto-generates and signs RSA host keys. Although this simplifies setup, on Windows systems,
-  this behavior may raise security alerts. I am aware of, and plan to address this issue in future releases.
+  this behavior will raise security alerts unless stict checking has been disabled (not recommended).
+  I am aware of, and plan to address this issue in future releases.
 
 - **Router Configuration for Hosting**:  
   To properly use the hosting functionality, ensure that **port 22 on your router is forwarded** to the machine running
