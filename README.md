@@ -12,8 +12,6 @@ allow connections to internal servers (such as a Minecraft server) from outside 
   server by forwarding SSH connections.
   
 - **Auto Signing of RSA Keys**: Generates and automatically signs RSA host keys at startup.  
-  **Important:** This automatic key signing may trigger security warnings or alarms on Windows machines.
-   This is a known issue that will be addressed in future updates.
   
 - **Manual Connection Approval**: For connections from IP addresses not explicitly whitelisted, the
    application requires manual approval through the GUI.
@@ -37,7 +35,7 @@ allow connections to internal servers (such as a Minecraft server) from outside 
 
 - **Auto Signing Keys on Windows**:  
   The application auto-generates and signs RSA host keys. Although this simplifies setup, on Windows systems,
-  this behavior may raise security alerts. I am aware of the issue and plan to refine this aspect in future versions.
+  this behavior may raise security alerts. I am aware of, and plan to address this issue in future releases.
 
 - **Router Configuration for Hosting**:  
   To properly use the hosting functionality, ensure that **port 22 on your router is forwarded** to the machine running
