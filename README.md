@@ -23,12 +23,7 @@ allow connections to internal servers (such as a Minecraft server) from outside 
    to a file (`app.log`) and displayed in the GUI.
   
 - **Minimal SSH Server**: The SSH server in this application is solely meant for port mapping.
-   There is **no additional service attached** to it, so when testing manually (e.g., in a terminal),
-   you may encounter:
-  
-  - **Channel Request Errors**: When requests to open a new session or direct TCP/IP channel fail.
-  - **Key Signing Warnings**: Due to the automatic RSA key generation and signing process.
-  - **Connection Timeouts**: Particularly if the router’s port forwarding (port 22) is not correctly configured.
+   There is no additional service attached to it.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 ## Important Considerations
