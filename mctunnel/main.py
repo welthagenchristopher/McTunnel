@@ -507,7 +507,7 @@ class App:
     # Docs
     # ------------------------------
     def open_docs(self):
-        github_url = "https://github.com/your_repo"  # Replace with your repository URL.
+        github_url = "https://github.com/welthagenchristopher/McTunnel"  
         webbrowser.open_new_tab(github_url)
 
 if __name__ == "__main__":
