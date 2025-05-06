@@ -65,8 +65,8 @@ excecution.
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/mctunnel.git
-   cd mctunnel
+   git clone https://github.com/welthagenchristopher/mctunnel.git
+   cd ../mctunnel
 
 
 1. **Install the dependencies:**
@@ -97,5 +97,5 @@ To quickly package this into an exe:
   _python -m PyInstaller_ - runs pyinstaller as a python module
 
   _--uac-admin_ - embeds an automatic 'run as administrator' prompt,
-  which is necessary for performing network operations on port 22.
+  which is necessary for performing network operations on certain ports
 
