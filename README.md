@@ -29,26 +29,26 @@ allow connections to internal servers (such as a Minecraft server) from outside 
 ## Important Considerations
 
 - **Auto Signing Keys on Windows**:  
-  The application auto-generates and signs RSA host keys. Although this simplifies setup, on Windows systems,
-  this behavior will raise security alerts unless stict checking has been disabled (not recommended).
+  The application auto-generates and signs RSA host keys. Although this simplifies setup,
+  this behavior will raise security alerts unless stict checking has been disabled (not recommended at all).
   I am aware of, and plan to address this issue in future releases.
 
 - **Router Configuration for Hosting**:  
-  To properly use the hosting functionality, ensure that **an apprpriate tcp on your router is forwarded** to the machine running
+  To properly use the hosting functionality, ensure that **an appropriate tcp on your router is forwarded** to the machine running
   McTunnel. Without this, external SSH connections required for port mapping may fail.
 
 - **Intended Use and Error Messages**:  
   McTunnel is focused on enabling port mapping so that Minecraft servers hosted on a LAN become accessible from outside
   the local network. When testing manually:
-  - You may see **channel request errors** if the SSH client attempts services not provided by this minimal server.
+  - You may see **channel request errors** if the SSH client attempts to launch or connect to services not provided by this minimal server.
   - **Random warnings or errors** may also appear during key signing or if the connection does not follow the expected forwarding
     flow.
 These are *expected* behaviours. This is a barebones, secure port forwarding setup - not intended to service requests or command
 excecution.
 
 - **Ongoing Development**:  
-  This is in very early stages at the moment. It should work if everything is configured correctly, but I will slowly be consolidating
-  its functionality, incorperating self tests, and educating myself on the interaction between paramiko and its dependencies.
+  This is in very early stages at the moment. It works with a persistent server key, but I will slowly be consolidating
+  its functionality, incorperating self tests, and educating myself on the interaction between paramiko and its dependencies to further enchance this.
 
 
 ## Getting Started
