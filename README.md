@@ -34,7 +34,7 @@ allow connections to internal servers (such as a Minecraft server) from outside 
   I am aware of, and plan to address this issue in future releases.
 
 - **Router Configuration for Hosting**:  
-  To properly use the hosting functionality, ensure that **port 22 on your router is forwarded** to the machine running
+  To properly use the hosting functionality, ensure that **an apprpriate tcp on your router is forwarded** to the machine running
   McTunnel. Without this, external SSH connections required for port mapping may fail.
 
 - **Intended Use and Error Messages**:  
