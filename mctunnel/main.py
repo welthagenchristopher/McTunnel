@@ -68,7 +68,7 @@ def handler(chan, host, port):
         # Empty arguments fulfill syntax requirement of 
         # read-ready, write-ready, exceptional conditions arguments
         # for select method. Only read ready is being monitored in
-        # this case.
+        # this case, hence the empty arguments.
         r, _, _ = select.select([sock, chan], [], [])
         if sock in r:
             data = sock.recv(1024)
@@ -102,7 +102,7 @@ def forward_tunnel(local_port, remote_host, remote_port, transport):
         threading.Thread(target=handler, args=(chan, remote_host, int(remote_port)), daemon=True).start()
 
 # ------------------------------
-# Minimal SSH Server Interface (Host Side)
+# SSH Server Interface (Host Side)
 # ------------------------------
 
 class SimpleSSHServer(paramiko.ServerInterface):
@@ -440,7 +440,7 @@ class App:
             widget.destroy()
 
     # ------------------------------
-    # Logs Tab Setup (Always Present)
+    # Logs Tab Setup 
     # ------------------------------
     def setup_logs_tab(self):
         # Create two vertical panes using frames.
